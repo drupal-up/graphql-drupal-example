@@ -768,3 +768,8 @@ $settings['entity_update_batch_size'] = 50;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+
+/**
+ * Emable the graphql services.
+ */
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/graphql.services.yml';
