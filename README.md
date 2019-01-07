@@ -4,9 +4,14 @@ composer install
 
 cd web/
 
+create empty database
+
 ../vendor/bin/drush site:install --existing-config
 
-Change the url of the api.
+Go to the Drupal interface - login and create some articles.
+
+Change the networkInterface.uri of the api with your drupal instance url there.
+web-app/src/App.js
 
 cd ../web-app/
 
