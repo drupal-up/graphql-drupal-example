@@ -1,4 +1,4 @@
-uuid: c865b6d3-8242-4483-9a08-5c056193a33d
+uuid: dd0f5bb4-3b1d-44c6-8876-691d5e16ac11
 langcode: en
 status: true
 dependencies: {  }
@@ -9,13 +9,6 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
-  - 'access shortcuts'
-  - 'access site-wide contact form'
   - 'execute graphql requests'
   - 'execute persisted graphql requests'
-  - 'post comments'
-  - 'search content'
-  - 'skip comment approval'
-  - 'use text format basic_html'

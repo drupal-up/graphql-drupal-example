@@ -1,4 +1,4 @@
-uuid: f892014a-9365-4755-b129-c1478232007a
+uuid: 84e7e8d3-3d02-4dd9-b0bd-d04c11c3300b
 langcode: en
 status: true
 dependencies: {  }
@@ -9,10 +9,6 @@ label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
-  - 'access site-wide contact form'
   - 'execute graphql requests'
   - 'execute persisted graphql requests'
-  - 'search content'
-  - 'use text format restricted_html'

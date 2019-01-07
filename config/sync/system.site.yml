@@ -1,11 +1,11 @@
-uuid: a8db83f5-f5bc-4f51-83c6-f3e67c1b6ef5
-name: Graphy
-mail: nikolay.r.borisov@gmail.com
+uuid: 87d296f8-5133-4d7b-ae9d-dec1e8ab1b08
+name: 'Graphql Example'
+mail: hi@example.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /user/login
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

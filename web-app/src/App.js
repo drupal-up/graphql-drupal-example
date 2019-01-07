@@ -5,7 +5,7 @@ import { ApolloProvider } from 'react-apollo';
 
 const client = new ApolloClient({
   networkInterface: createNetworkInterface({
-    uri: 'http://localhost/graphy/web/graphql'
+    uri: 'http://localhost/graphql-drupal-example/web/graphql'
   }),
 });
 
