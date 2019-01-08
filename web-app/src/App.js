@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import ArticlesView from './ArticlesView';
 import { ApolloClient, createNetworkInterface } from 'apollo-client';
 import { ApolloProvider } from 'react-apollo';
+import NodesView from './NodesView';
 
 const client = new ApolloClient({
   networkInterface: createNetworkInterface({
@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <ApolloProvider client={client}>
-        <ArticlesView />
+        <NodesView />
       </ApolloProvider>
     );
   }

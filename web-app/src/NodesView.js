@@ -1,7 +1,6 @@
 import React from 'react';
 import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
-import ArticleTeaser from './ArticleTeaser';
 
 const GET_NODES = gql`
 query articlesQuery {
@@ -14,18 +13,22 @@ query articlesQuery {
 }
 `;
 
-const ArticlesView = () => (
+const NodesView = () => (
 			<Query query={GET_NODES}>
 				{({ loading, error, data }) => {
 					if (loading) return <div>Loading...</div>;
 					if (error) return <div>Error :(</div>;
 					return (
 						<ul>
-							{data.nodeQuery.entities.map(article => <li key={article.id}><ArticleTeaser article={article} /></li>)}
+							{
+								data.nodeQuery.entities.map(
+									node => <li key={node.id}><h3>{node.title}</h3></li>
+								)
+							}
 						</ul>
 					)
 				}}
 			</Query>
     )
 
-export default ArticlesView;
+export default NodesView;
