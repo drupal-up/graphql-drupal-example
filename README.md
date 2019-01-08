@@ -1,6 +1,8 @@
-# Example of how to implement graphql
+# Example of how to implement graphql in Drupal 8
 
-## Install composer packages.
+# How to get this example project up and running
+
+## Install composer packages (from the root of the project).
 ```
 composer install
 ```
@@ -19,6 +21,7 @@ cd web/
 ```
 cd ../web-app/
 nano web-app/src/App.js
+# Substitute [YOUR_DRUPAL_INSTANCE_URL] with your Drupal instance url in App.js
 ```
 
 ## Install node packages.
@@ -30,3 +33,4 @@ npm install
 ```
 npm start
 ```
+## Reward your self with a cup of coffee ☕
