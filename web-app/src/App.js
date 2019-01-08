@@ -5,7 +5,7 @@ import { ApolloProvider } from 'react-apollo';
 
 const client = new ApolloClient({
   networkInterface: createNetworkInterface({
-    uri: 'http://[YOUR_DRUPAL_INSTANCE_URL]/graphql'
+    uri: process.env.REACT_APP_DRUPAL_URL + '/graphql'
   }),
 });
 
@@ -15,7 +15,6 @@ class App extends Component {
       <ApolloProvider client={client}>
         <ArticlesView />
       </ApolloProvider>
-
     );
   }
 }

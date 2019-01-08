@@ -21,11 +21,12 @@ cd web/
 
 ## Go to the Drupal interface, login and create some article nodes.
 
-## Change the networkInterface.uri with [YOUR_DRUPAL_INSTANCE_URL] in web-app/src/App.js.
+## Change the REACT_APP_DRUPAL_URL with [YOUR_DRUPAL_INSTANCE_URL] in web-app/.env.local
 ```
 cd ../web-app/
-nano web-app/src/App.js
-# Substitute [YOUR_DRUPAL_INSTANCE_URL] with your Drupal instance url in App.js
+cp .env.local.example .env.local
+nano .env.local
+# Change the value of REACT_APP_DRUPAL_URL
 ```
 
 ## Install node packages.
