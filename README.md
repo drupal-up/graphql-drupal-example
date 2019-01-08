@@ -21,11 +21,11 @@ cd web/
 
 ## Go to the Drupal interface, login and create some article nodes.
 
-## Change the REACT_APP_DRUPAL_URL with [YOUR_DRUPAL_INSTANCE_URL] in web-app/.env.local
+## Change the REACT_APP_DRUPAL_URL with [YOUR_DRUPAL_INSTANCE_URL] in web-app/.env (after you create it)
 ```
 cd ../web-app/
-cp .env.local.example .env.local
-nano .env.local
+cp .env.example .env
+nano .env
 # Change the value of REACT_APP_DRUPAL_URL
 ```
 
