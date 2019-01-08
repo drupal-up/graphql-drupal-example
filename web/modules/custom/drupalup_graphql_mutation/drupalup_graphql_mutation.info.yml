@@ -1,0 +1,6 @@
+name: Drupal Up GraphQL mutation
+description: 'Drupal Up GraphQL Mutation'
+type: module
+core: 8.x
+dependencies:
+- graphql_core
