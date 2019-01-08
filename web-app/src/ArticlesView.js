@@ -1,11 +1,11 @@
 import React from 'react';
-import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
-import ArticleTeaser from './ArticleTeaser.js';
+import { Query } from 'react-apollo';
+import ArticleTeaser from './ArticleTeaser';
 
-const query = gql`
+const GET_NODES = gql`
 query articlesQuery {
-	articlesGraphqlArticlesView:nodeQuery{
+	nodeQuery{
   	entities {
     	id:entityId
     	title:entityLabel
@@ -14,22 +14,18 @@ query articlesQuery {
 }
 `;
 
-const withQuery = graphql(query, {
-  props: ({ data: { loading, articlesGraphqlArticlesView } }) => ({
-    loading,
-    articles: articlesGraphqlArticlesView
-  }),
-});
+const ArticlesView = () => (
+			<Query query={GET_NODES}>
+				{({ loading, error, data }) => {
+					if (loading) return <div>Loading...</div>;
+					if (error) return <div>Error :(</div>;
+					return (
+						<ul>
+							{data.nodeQuery.entities.map(article => <li key={article.id}><ArticleTeaser article={article} /></li>)}
+						</ul>
+					)
+				}}
+			</Query>
+    )
 
-const ArticlesView = ({ loading, articles }) => {
-  if (loading) {
-    return null;
-  }
-  return (
-    <ul>
-      {articles.entities.map(article => <li key={article.id}><ArticleTeaser article={article} /></li>)}
-    </ul>
-  )
-};
-
-export default withQuery(ArticlesView);
+export default ArticlesView;

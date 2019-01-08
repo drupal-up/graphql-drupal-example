@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ArticlesView from './ArticlesView.js';
+import ArticlesView from './ArticlesView';
 import { ApolloClient, createNetworkInterface } from 'apollo-client';
 import { ApolloProvider } from 'react-apollo';
 
