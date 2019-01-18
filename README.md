@@ -25,6 +25,10 @@ cd web/
 ```
 ../vendor/bin/drush drupalup_create_content:riddle
 ```
+## Clear Drupal's cache. This registers some of the graphql declarations
+```
+../vendor/bin/drush cr
+```
 
 ## Change the REACT_APP_DRUPAL_URL with [YOUR_DRUPAL_INSTANCE_URL] in web-app/.env (after you create it)
 ```
