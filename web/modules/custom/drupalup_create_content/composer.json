@@ -1,0 +1,17 @@
+{
+  "name": "drupal/drupalup_create_content",
+  "description": "Drush command to create Riddle content.",
+  "type": "drupal-module",
+  "autoload": {
+    "psr-4": {
+      "Drupal\\drupalup_create_content\\": "src/"
+    }
+  },
+  "extra": {
+    "drush": {
+      "services": {
+        "drush.services.yml": "^9"
+      }
+    }
+  }
+}
