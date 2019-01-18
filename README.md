@@ -21,11 +21,11 @@ cd web/
 
 ## If you plan to play with it - save the admin password or keep in mind that "drush uli" exists ;)
 
-## Create some riddle nodes with a drush command that I implemented.
+## Create some riddle nodes with a drush command that I implemented. (still from the web/ folder)
 ```
 ../vendor/bin/drush drupalup_create_content:riddle
 ```
-## Clear Drupal's cache. This registers some of the graphql declarations
+## Clear Drupal's cache. This registers some of the graphql declarations (still from the web/ folder)
 ```
 ../vendor/bin/drush cr
 ```
@@ -38,13 +38,13 @@ nano .env
 # Change the value of REACT_APP_DRUPAL_URL
 ```
 
-## Install node packages.
+## Install node packages. (still from the web-app/ folder)
 ```
 npm install
 ```
 
-## Start the React application.
+## Start the React application. (still from the web-app/ folder)
 ```
 npm start
 ```
-## Reward your self with a cup of coffee ☕
+## Reward your self with a cup of coffee while you are enjoying some riddles ☕
