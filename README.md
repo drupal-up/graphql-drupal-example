@@ -2,6 +2,8 @@
 This is an example of how to implement GraphQL in Drupal 8.
 For now the project just exposes it's published node content on the Drupal side and renders it in the React App. It does not do much more than that for now.
 
+What I feel is very important to say is that this example is **using the drupal/graphql module version 3**. Keep it in mind if you are trying just bits of this example or you are comparing it to some other article out on the web.
+
 Further you will find a detailed explanation of how to install and have it up and running on your local machine.
 
 # How to get this example project up and running (installing)
