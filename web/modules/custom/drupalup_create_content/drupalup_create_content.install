@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Adding some hook_update hooks here.
+ */
+
+/**
+ * Adding some default riddles.
+ */
+function drupalup_create_content_update_8001() {
+  $riddles = [
+    ['question' => 'What\'s orange and sounds like a parrot?', 'answer' => 'Carrot.'],
+    ['question' => 'What has four wheels and flies?', 'answer' => 'A garbage truck.'],
+    ['question' => 'What kind of room has no doors or windows?', 'answer' => 'A Mushroom.'],
+  ];
+
+  foreach ($riddles as $riddle) {
+    \Drupal::entityTypeManager()
+      ->getStorage('node')
+      ->create([
+        'type'  => 'riddle',
+        'title' => $riddle['question'],
+        'question' => [
+          'value' => $riddle['question'],
+        ],
+        'answer' => [
+          'value' => $riddle['answer'],
+        ],
+      ])
+      ->save();
+  }
+}

@@ -1,0 +1,22 @@
+uuid: 12e3b4d9-09e0-48a2-88ff-67ee519fd2e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.riddle
+id: node.riddle.promote
+field_name: promote
+entity_type: node
+bundle: riddle
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

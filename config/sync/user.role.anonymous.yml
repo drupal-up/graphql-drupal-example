@@ -10,5 +10,12 @@ weight: 0
 is_admin: false
 permissions:
   - 'access content'
+  - 'create article content'
+  - 'create riddle content'
+  - 'delete any riddle content'
+  - 'delete own riddle content'
+  - 'delete riddle revisions'
+  - 'edit any riddle content'
+  - 'edit own riddle content'
   - 'execute graphql requests'
   - 'execute persisted graphql requests'

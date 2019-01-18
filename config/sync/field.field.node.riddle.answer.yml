@@ -1,0 +1,19 @@
+uuid: 04e049ae-1793-4d37-b4ce-a3719735a846
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.answer
+    - node.type.riddle
+id: node.riddle.answer
+field_name: answer
+entity_type: node
+bundle: riddle
+label: Answer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

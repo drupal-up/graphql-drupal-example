@@ -1,0 +1,4 @@
+name: Riddle create content
+description: A simple module that just creates some dummy riddles content ndoes
+type: module
+core: 8.x

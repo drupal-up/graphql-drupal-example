@@ -5,11 +5,11 @@ namespace Drupal\drupalup_graphql_mutation\Plugin\GraphQL\InputTypes;
 use Drupal\graphql\Plugin\GraphQL\InputTypes\InputTypePluginBase;
 
 /**
- * The input type for article mutations.
+ * The input type for node mutations.
  *
  * @GraphQLInputType(
- *   id = "article_input",
- *   name = "ArticleInput",
+ *   id = "node_input",
+ *   name = "NodeInput",
  *   fields = {
  *     "title" = "String",
  *     "body" = {
@@ -19,6 +19,6 @@ use Drupal\graphql\Plugin\GraphQL\InputTypes\InputTypePluginBase;
  *   }
  * )
  */
-class ArticleInput extends InputTypePluginBase {
+class NodeInput extends InputTypePluginBase {
 
 }

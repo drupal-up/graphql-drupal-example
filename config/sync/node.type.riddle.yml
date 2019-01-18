@@ -1,0 +1,11 @@
+uuid: d260ff98-6bd7-4f3f-bec8-b97b2b95837a
+langcode: en
+status: true
+dependencies: {  }
+name: Riddle
+type: riddle
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

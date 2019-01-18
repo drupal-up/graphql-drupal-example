@@ -3,12 +3,15 @@ import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
 
 const GET_NODES = gql`
-query articlesQuery {
-	nodeQuery{
-  	entities {
-    	id:entityId
-    	title:entityLabel
-		}
+query riddleQuery {
+	nodeQuery(filter:{conditions:{field: "type", value: "riddle", operator: EQUAL}}){
+    entities {
+      ... on NodeRiddle {
+        nid
+        question
+        answer
+      }
+    }
 	}
 }
 `;
@@ -19,13 +22,18 @@ const NodesView = () => (
 					if (loading) return <div>Loading...</div>;
 					if (error) return <div>Error :(</div>;
 					return (
-						<ul>
-							{
-								data.nodeQuery.entities.map(
-									node => <li key={node.id}><h3>{node.title}</h3></li>
-								)
-							}
-						</ul>
+						<div>
+							<ul>
+								{
+									data.nodeQuery.entities.map(
+										node => <li key={node.nid}>
+											<h3>{node.question}  <span onClick={function() { alert(node.answer); }}>🦄</span> </h3>
+										</li>
+									)
+								}
+							</ul>
+							<span class="info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * the answer lies in the unicorn</span>
+						</div>
 					)
 				}}
 			</Query>

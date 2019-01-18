@@ -3,25 +3,26 @@
 namespace Drupal\drupalup_graphql_mutation\Plugin\GraphQL\Mutations;
 
 use Drupal\graphql\GraphQL\Execution\ResolveContext;
-use Drupal\graphql_core\Plugin\GraphQL\Mutations\Entity\CreateEntityBase;
+use Drupal\graphql_core\Plugin\GraphQL\Mutations\Entity\UpdateEntityBase;
 use GraphQL\Type\Definition\ResolveInfo;
 
 /**
- * Simple mutation for creating a new article node.
+ * Simple mutation for updating an existing riddle node.
  *
  * @GraphQLMutation(
- *   id = "create_article",
+ *   id = "update_riddle",
  *   entity_type = "node",
- *   entity_bundle = "article",
+ *   entity_bundle = "riddle",
  *   secure = true,
- *   name = "createArticle",
+ *   name = "updateRiddle",
  *   type = "EntityCrudOutput!",
  *   arguments = {
- *     "input" = "ArticleInput"
+ *     "id" = "String",
+ *     "input" = "NodeInput"
  *   }
  * )
  */
-class CreateArticle extends CreateEntityBase {
+class UpdateRiddle extends UpdateEntityBase {
 
   /**
    * {@inheritdoc}
@@ -32,10 +33,11 @@ class CreateArticle extends CreateEntityBase {
     ResolveContext $context,
     ResolveInfo $info
   ) {
-    return [
+    return array_filter([
       'title' => $args['input']['title'],
-      'body' => $args['input']['body'],
-    ];
+      'question' => $args['input']['question'],
+      'answer' => $args['input']['answer'],
+    ]);
   }
 
 }

@@ -5,20 +5,20 @@ namespace Drupal\drupalup_graphql_mutation\Plugin\GraphQL\Mutations;
 use Drupal\graphql_core\Plugin\GraphQL\Mutations\Entity\DeleteEntityBase;
 
 /**
- * Simple mutation for deleting an article node.
+ * Simple mutation for deleting a riddle node.
  *
  * @GraphQLMutation(
- *   id = "delete_article",
+ *   id = "delete_riddle",
  *   entity_type = "node",
- *   entity_bundle = "article",
+ *   entity_bundle = "riddle",
  *   secure = true,
- *   name = "deleteArticle",
+ *   name = "deleteRiddle",
  *   type = "EntityCrudOutput!",
  *   arguments = {
  *     "id" = "String"
  *   }
  * )
  */
-class DeleteArticle extends DeleteEntityBase {
+class DeleteRiddle extends DeleteEntityBase {
 
 }
