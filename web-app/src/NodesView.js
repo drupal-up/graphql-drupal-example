@@ -27,12 +27,12 @@ const NodesView = () => (
 								{
 									data.nodeQuery.entities.map(
 										node => <li key={node.nid}>
-											<h3>{node.question}  <span onClick={function() { alert(node.answer); }}>🦄</span> </h3>
+											<h3>{node.question}  <span role="img" aria-label="The answering unicorn." onClick={function() { alert(node.answer); }}>🦄</span> </h3>
 										</li>
 									)
 								}
 							</ul>
-							<span class="info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * the answer lies in the unicorn</span>
+							<span className="info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * the answer lies in the unicorn</span>
 						</div>
 					)
 				}}
