@@ -19,7 +19,12 @@ cd web/
 ../vendor/bin/drush site:install --existing-config
 ```
 
-## Go to the Drupal interface, login and create some article nodes.
+## If you plan to play with it - save the admin password or keep in mind that "drush uli" exists ;)
+
+## Create some riddle nodes with a drush command that I implemented.
+```
+../vendor/bin/drush drupalup_create_content:riddle
+```
 
 ## Change the REACT_APP_DRUPAL_URL with [YOUR_DRUPAL_INSTANCE_URL] in web-app/.env (after you create it)
 ```
