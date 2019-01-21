@@ -32,6 +32,8 @@ How to install it you could find in the Install section further on this page.
 
 # Installing
 
+## Download this repo.
+
 ## Install composer packages (from the root of the project).
 ```
 composer install
