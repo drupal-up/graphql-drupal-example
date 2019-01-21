@@ -6,7 +6,25 @@ What I feel is very important to say is that this example is **using the drupal/
 
 Further you will find a detailed explanation of how to install and have it up and running on your local machine.
 
-# How to get this example project up and running (installing)
+# The Drupal Part
+The Drupal instance that is feeding the React App is in the web folder. It's composer file thought is in the root of the porject, so you would run your composer commands from the root folder.
+
+The project is using the GraphQL module, version 8.x-3.
+
+The schema in the context of this version of the module is basically the reflection of the Permissions for the specified Content Types.
+
+How to install it you could find in the Install section further on this page.
+
+# The React App
+The Aeact App is in the web-app folder.
+
+All the relevant code is in the web-app/src/App.js and web-app/src/NodesView.js files.
+
+There you could find example with ApolloClient how you could make graphql requests the same way you would do them in the GraphiQL interface inside of Drupal (with the only difference of course that there you are authorized as a Drupal user, so if you can't fetch something from here - check the Drupal Permissions ).
+
+How to install it you could find in the Install section further on this page.
+
+# Installing
 
 ## Install composer packages (from the root of the project).
 ```
