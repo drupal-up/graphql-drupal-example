@@ -7,6 +7,9 @@ What I feel is very important to say is that this example is **using the drupal/
 Further you will find a detailed explanation of how to install and have it up and running on your local machine.
 
 # The Drupal Part
+
+![Drupal GraphQL](docs/images/drupal_8-graphql-screenshot.gif)
+
 The Drupal instance that is feeding the React App is in the web folder. It's composer file thought is in the root of the porject, so you would run your composer commands from the root folder.
 
 The project is using the GraphQL module, version 8.x-3.
@@ -16,6 +19,9 @@ The schema in the context of this version of the module is basically the reflect
 How to install it you could find in the Install section further on this page.
 
 # The React App
+
+![React GraphQL Drupal](docs/images/react_app.gif)
+
 The Aeact App is in the web-app folder.
 
 All the relevant code is in the web-app/src/App.js and web-app/src/NodesView.js files.
