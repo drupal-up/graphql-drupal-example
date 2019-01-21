@@ -6,7 +6,7 @@ What I feel is very important to say is that this example is **using the drupal/
 
 Further you will find a detailed explanation of how to install and have it up and running on your local machine.
 
-# 💧The Drupal Part
+# 💧 The Drupal Part
 
 ![Drupal GraphQL](docs/images/drupal_8-graphql-screenshot.gif)
 
@@ -18,7 +18,7 @@ The schema in the context of this version of the module is basically the reflect
 
 How to install it you could find in the Install section further on this page.
 
-# 🤖The React App
+# 🤖 The React App
 
 ![React GraphQL Drupal](docs/images/react_app.gif)
 
@@ -30,7 +30,7 @@ There you could find example with ApolloClient how you could make graphql reques
 
 How to install it you could find in the Install section further on this page.
 
-# 🛠Installing
+# 🛠 Installing
 
 ## Download this repo.
 
